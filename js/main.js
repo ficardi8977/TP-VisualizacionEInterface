@@ -93,6 +93,30 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth', // Vista inicial del calendario (mes)
+            locale: 'es',
+            events: [
+                {
+                    title: 'Acto escolar',
+                    start: '2023-07-10',
+                    end: '2023-07-11'
+                },
+                {
+                    title: 'Boletines',
+                    start: '2023-07-19',
+                    end: '2023-07-20'
+                },
+                {
+                    title: 'Exposicion arte',
+                    start: '2023-07-28',
+                    end: '2023-07-29'
+                }
+            ]
+        });
+        calendar.render();
+    });
 })(jQuery);
 

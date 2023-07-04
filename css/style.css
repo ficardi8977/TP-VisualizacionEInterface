@@ -1,8 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #32C36C;
+    --primary: #3930aa;
     --light: #F6F7F8;
     --dark: #1A2A36;
+    --hover: #32c3be;
 }
 
 .fw-medium {
@@ -78,6 +79,7 @@
 }
 
 /*** Navbar ***/
+
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
@@ -91,7 +93,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: var(--light);
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -100,7 +102,8 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--hover);
+    font-weight: bold;
 }
 
 .navbar .dropdown-toggle::after {
@@ -573,4 +576,19 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+-- AGREGADO PARA CALENDARIO--
+.row-striped:nth-of-type(odd){
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even){
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+}
+
+.row-striped {
+    padding: 15px 0;
 }
