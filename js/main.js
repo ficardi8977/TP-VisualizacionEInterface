@@ -53,7 +53,7 @@
         smartSpeed: 1500,
         loop: true,
         nav: false,
-        dots: true,
+        dots: false,
         items: 1,
         dotsData: true,
     });
