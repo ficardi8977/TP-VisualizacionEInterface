@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Solartec - Renewable Energy Website Template</title>
+    <title>Instituto San Cayetano</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -35,10 +35,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            text-align: center;
         }
 
         .message-board {
@@ -94,7 +90,7 @@
 
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-primary sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex">
+    <a href="index-login.html" class="navbar-brand d-flex">
         <img src="img/Logo-removebg-preview.png">
     </a>
     <button type="button" class="navbar-toggler navbar-dark me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -103,11 +99,11 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="boletinOnline.html" class="nav-item nav-link">Boletin online</a>
-            <a href="Mensajeria.html" class="nav-item nav-link">Mensajeria</a>
+            <a href="mensajeria.html" class="nav-item nav-link">Mensajeria<span class="badge bg-danger float-end text-white">1</span></a>
             <a href="reuniones-curso.html" class="nav-item nav-link">Reuniones</a>
-            <a href="contact.html" class="nav-item nav-link">Nosotros</a>
+            <a href="contact.html" class="nav-item nav-link">Contactanos</a>
         </div>
-        <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Ingresar<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Hola Juan!<i class="fa fa-user ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -117,7 +113,7 @@
         <h1 class="display-3 text-white mb-3 animated slideInDown">Mensajeria</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="index-login.html">Home</a></li>
                 <li class="breadcrumb-item text-white active" aria-current="page">Mensajeria</li>
             </ol>
         </nav>
@@ -134,7 +130,7 @@
 
             <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
 
-                <h5 class="font-weight-bold mb-3 text-center text-lg-start">grupos</h5>
+                <h6 class="text-primary">Grupos</h6>
 
                 <div class="card">
                     <div class="card-body">
@@ -147,11 +143,11 @@
                                              class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
                                         <div class="pt-1">
                                             <p class="fw-bold mb-0">Curso 3B </p>
-                                            <p class="small text-muted"> Mi hijo estuvo enfermo esta semana. ¿Podría alguna de ustedes compartirme la tarea?</p>
+                                            <p class="small text-muted">¿Podría alguna pasarme la tarea?</p>
                                         </div>
                                     </div>
                                     <div class="pt-1">
-                                        <p class="small text-muted mb-1">hace 5 minutos</p>
+                                        <p class="small text-muted mb-1">hace 5 min</p>
                                         <span class="badge bg-primary float-end text-white">1</span>
                                     </div>
                                 </a>
@@ -177,8 +173,9 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-lg-7 col-xl-8">
 
+            <div class="col-md-6 col-lg-7 col-xl-8">
+                <h6 class="text-primary">Chat</h6>
                 <ul class="list-unstyled">
                     <li class="d-flex flex-row-reverse">
                         <div class="card">
@@ -253,17 +250,17 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Enlaces rápidos</h5>
-                <a class="btn btn-link" href="">Home</a>
-                <a class="btn btn-link" href="">Reuniones</a>
-                <a class="btn btn-link" href="">Boletin Online</a>
-                <a class="btn btn-link" href="">Mensajeria</a>
+                <a class="btn btn-link" href="index-login.html">Home</a>
+                <a class="btn btn-link" href="reuniones-curso.html">Reuniones</a>
+                <a class="btn btn-link" href="boletinOnline.html">Boletin Online</a>
+                <a class="btn btn-link" href="mensajeria.html">Mensajeria</a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4"></h5>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <p>Recibí novedades de nuestra institución en tu mail</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="mai@mail.com">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                 </div>
             </div>
         </div>
