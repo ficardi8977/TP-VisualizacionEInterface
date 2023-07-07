@@ -24,12 +24,23 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+        href=
+                "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reunion.css">
 </head>
 
 <body>
@@ -75,6 +86,532 @@
 </div>
 <!-- Page Header End -->
 
+<!-- BARRA PROGRESO CON PASOS -->
+<div class="container">
+
+
+<div class="row justify-content-center">
+  <div class="col-11 col-sm-9 col-md-7
+				col-lg-8 col-xl-9 text-center p-0 mt-3 mb-2">
+    <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+      <form id="form">
+        <ul id="progressbar">
+          <li class="active" id="step1">
+            <strong>Seleccionar Alumno</strong>
+          </li>
+          <li id="step2"><strong>Seleccionar Materia</strong></li>
+          <li id="step3"><strong>Seleccionar Fecha</strong></li>
+          <li id="step4"><strong>Resumen</strong></li>
+        </ul>
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div> <br>
+        <fieldset>
+          <h2>Seleccione Alumno</h2>
+
+          <div class="card fixed-height-card">
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="my-3">
+                    <img src="img/alumnoAula.jpg" class="card-img" alt="Foto del Alumno">
+                  </div>
+                </div>
+                <div class="col-md-6 my-3">
+                  <div class="mb-3">
+
+
+                    <label for="alumno" class="form-label">Alumno:</label>
+                    <div style="margin-left: 15px;"> <!-- Agrega este div con margen izquierdo -->
+                      <select class="form-select" id="alumno" aria-label="Default select example">
+                        <option selected disabled>Seleccione un alumno</option>
+                        <option value="alumno1">Mariela</option>
+                        <option value="alumno2">Juan</option>
+                        <option value="alumno3">Marcos</option>
+                        <!-- Agrega más opciones de alumnos según necesites -->
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-user"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>Mariela Carrizo</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-id-card"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>45256345</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col align-items-start">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-school"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>1°C Turno Mañana</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-birthday-cake"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>11/07/2010</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="button" name="next-step"
+                 class="next-step btn btn-primary rounded-pill" value="Continuar" />
+
+        </fieldset>
+        <fieldset>
+          <h2>Seleccione Materia</h2>
+
+          <div class="card fixed-height-card">
+            <div class="card-body">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="my-3">
+                    <img src="img/aula2.jpg" class="card-img" alt="Foto del Alumno">
+                  </div>
+                </div>
+                <div class="col-md-6 my-3">
+                  <div class="mb-3">
+
+
+                    <label for="alumno" class="form-label">Materia:</label>
+                    <div style="margin-left: 15px;"> <!-- Agrega este div con margen izquierdo -->
+                      <select class="form-select" id="materia" aria-label="Default select example">
+                        <option selected disabled>Seleccione una materia</option>
+                        <option value="alumno1">Matematica 1°B</option>
+                        <option value="alumno2">Historia 4°A</option>
+                        <option value="alumno3">Ciencias Naturales 2°C</option>
+                        <!-- Agrega más opciones de alumnos según necesites -->
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>Lucia Caliasi</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="far fa-envelope"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>luciacaliasi@gmail.com</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col align-items-start">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-clock"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>De 8 A 10 a.m</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="far fa-calendar-alt"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>Lunes y Viernes</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <input type="button" name="next-step"
+                 class="next-step btn btn-primary rounded-pill" value="Continuar" />
+
+          <input type="button" name="previous-step"
+                 class="previous-step btn btn-primary rounded-pill "
+                 value="Volver" />
+        </fieldset>
+
+        <fieldset>
+          <h2>Seleccione Horario y Fecha</h2>
+
+          <div class="card fixed-height-card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <div id="datepicker"
+                       class="input-group date"
+                       data-date-format="mm-dd-yyyy">
+                    <input class="form-control"
+                           type="text" readonly />
+                    <span class="input-group-addon">
+<i class="glyphicon glyphicon-calendar"></i>
+</span>
+                  </div>
+
+                  <div class="col-md-6">
+                  <div class="mb-3">
+
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                          <th colspan="2">Rango Horario</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="horario" id="horario1" value="horario1">
+                              <label class="form-check-label small" for="horario1">8:00 - 9:00</label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="horario" id="horario2" value="horario2">
+                              <label class="form-check-label small" for="horario2">9:00 - 10:00</label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="horario" id="horario3" value="horario3">
+                              <label class="form-check-label small" for="horario3">10:00 - 11:00</label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="horario" id="horario4" value="horario4">
+                              <label class="form-check-label small" for="horario4">11:00 - 12:00</label>
+                            </div>
+                          </td>
+                        </tr>
+                       <!--Agrega más filas de horarios según necesites -->
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+                <hr class="my-4">
+
+                  <div class="row">
+
+                    <div class="mb-3">
+                      <label for="descripcion" class="form-label">Descripción</label>
+                      <div class="row">
+                        <div class="col">
+                          <ul class="list-unstyled">
+                            <li>
+                              <div class="row custom-row align-items-center">
+                                <div class="col-auto custom-col">
+                                  <i class="fas fa-calendar"></i>
+                                </div>
+                                <div class="col custom-col">
+                                  <label>20/07/2023</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col align-items-start">
+                          <ul class="list-unstyled">
+                            <li>
+                              <div class="row custom-row align-items-center">
+                                <div class="col-auto custom-col">
+                                  <i class="fas fa-clock"></i>
+
+                                </div>
+                                <div class="col custom-col">
+                                  <label> 8 a 10 a.m</label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+          </div>
+          </div>
+
+          <input type="button" name="next-step"
+                 class="next-step btn btn-primary rounded-pill" value="Continuar" />
+
+          <input type="button" name="previous-step"
+                 class="previous-step btn btn-primary rounded-pill "
+                 value="Volver" />
+        </fieldset>
+        <fieldset>
+          <div class="finish">
+            <h2 class="text text-center">
+              <strong>Resumen</strong>
+            </h2>
+          </div>
+
+          <div class="card fixed-height-card">
+            <div class="card-body">
+              <div class="row">
+
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label">Alumno/a</label>
+                  <div class="row">
+                    <div class="col">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-user"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>Mariela Carrizo</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>45256345</label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col align-items-start">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-school"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>1°C Turno Mañana</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>11/07/2010</label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label">Maestro/a</label>
+                  <div class="row">
+                    <div class="col">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>Lucia Caliasi</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>luciacaliasi@gmail.com</label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col align-items-start">
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>De 8 a 10 a.m</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="row custom-row align-items-center">
+                            <div class="col-auto custom-col">
+                              <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="col custom-col">
+                              <label>Lunes y Viernes</label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Día y horario de cita</label>
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-calendar"></i>
+                          </div>
+                          <div class="col custom-col">
+                            <label>20/07/2023</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col align-items-start">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="row custom-row align-items-center">
+                          <div class="col-auto custom-col">
+                            <i class="fas fa-clock"></i>
+
+                          </div>
+                          <div class="col custom-col">
+                            <label> 8 a 10 a.m</label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <div class="mb-3">
+                <label>Información Importante</label>
+                <div>
+                  <i class="bi bi-info-circle"></i>
+                  <label>Recordar: Recuerde llegar a horario de la reunión pactada.</label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <input type="button" name="next-step"
+                 class="next-step btn btn-primary rounded-pill" value="Confirmar" />
+
+          <input type="button" name="previous-step"
+                 class="previous-step btn btn-primary rounded-pill "
+                 value="Volver" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FIN BARRA PROGRESO CON PASOS-->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">¡Éxito!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        El proceso se ha completado con éxito.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='index.html'">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
   <div class="container py-5">
@@ -117,9 +654,8 @@
 
 
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script><script src="lib/wow/wow.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/counterup/counterup.min.js"></script>
@@ -127,9 +663,21 @@
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script src="js/reunion.js"></script>
+
+
+
+<script src="js/calendario.js"></script>
+
 </body>
 
 </html>
